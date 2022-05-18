@@ -65,10 +65,15 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
+  // while(str.length>=0){
+  //   result.push(str)
+  //   if(str.length > 0)str = str.substring(1)
+  //   else break
+  // }
   while(str.length>=0){
     result.push(str)
-    if(str.length > 0)str = str.substring(1)
-    else break
+    str = str.split("").slice(1).join('')
+  
   }
   return result;
 };
@@ -140,8 +145,14 @@ const listFoods = (recipe) => {
       element=element.substring(1)
     }
     result.push(element)
+
+    //Answer:
+    //let withoutAmount = ingredient.slice(ingredient.indexOf(' ') + 1);
+    //let withoutUnit = withoutamount.slice(withoutAmount.indexOf(' ') + 1);
+    //result.push(withoutUnit)
   })
 
+  
   return result;
 };
 
