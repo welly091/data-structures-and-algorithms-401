@@ -25,11 +25,15 @@ The Big(O) for space complexity is O(1).
 
 ## Testing
 
+Go to **[test/data_structures](../../tests/data_structures)** folder and run ``pytest`` for each following test module.
+
+[test_linked_list](../../tests/data_structures/test_linked_list.py)
+
 Go to **[test/code_challenges](../../tests/code_challenges)** folder and run ``pytest`` for each following test module.
 
-[linked_list_insertions](../../tests/code_challenges/test_linked_list_insertions.py)
+[test_linked_list_insertions](../../tests/code_challenges/test_linked_list_insertions.py)
 
-[linked_list_kth](../../tests/code_challenges/test_linked_list_kth.py)
+[test_linked_list_kth](../../tests/code_challenges/test_linked_list_kth.py)
 
-[linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py)
+[test_linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py)
 
