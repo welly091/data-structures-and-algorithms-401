@@ -6,7 +6,8 @@ This code challenge shows how to insert a new Node in a Linked list.
 All tests for this challenge should be passed.
 
 ## Whiteboard Process
-![linked_list_insertions](code06.jpg)
+
+![linked_list_insertions](linked_list_insertions.jpg)
 
 ## Approach & Efficiency
 Contruct a Node class and a linked list class. A linked list can be initiated and can store Nodes instances that contains data.
