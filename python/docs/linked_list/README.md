@@ -34,7 +34,7 @@ Go to **[test/code_challenges](../../tests/code_challenges)** folder and run ``p
 
 [test_linked_list_insertions](../../tests/code_challenges/test_linked_list_insertions.py) (Code Challenge 06)
 
-[test_linked_list_kth](../../tests/code_challenges/test_linked_list_kth.py)
+[test_linked_list_kth](../../tests/code_challenges/test_linked_list_kth.py) (Code Challenge 07)
 
 [test_linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py)
 

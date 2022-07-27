@@ -1,4 +1,4 @@
-# Code Challenge Class 06 Linked List
+# Code Challenge Class 06
 # Linked List Insertions
 This code challenge shows how to insert a new Node in a Linked list.
 
@@ -10,7 +10,7 @@ All tests for this challenge should be passed.
 ![linked_list_insertions](linked_list_insertions.jpg)
 
 ## Approach & Efficiency
-Contruct a Node class and a linked list class. A linked list can be initiated and can store Nodes instances that contains data.
+Construct a Node class and a linked list class. A linked list can be initiated and can store Nodes instances that contains data.
 The Big(O) for time complexity for inserting a Node to a linked list is O(n) where n is determined by the linked list length.
 The Big(O) for space complexity is O(1).
 
@@ -38,7 +38,7 @@ Go to **[test/code_challenges](../../tests/code_challenges)** folder and run ``p
 
 [test_linked_list_insertions](../../tests/code_challenges/test_linked_list_insertions.py) (Code Challenge 06)
 
-[test_linked_list_kth](../../tests/code_challenges/test_linked_list_kth.py)
+[test_linked_list_kth](../../tests/code_challenges/test_linked_list_kth.py) (Code Challenge 07)
 
 [test_linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py)
 
