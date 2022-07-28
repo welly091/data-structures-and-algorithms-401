@@ -3,6 +3,10 @@ from data_structures.linked_list import LinkedList
 def zip_lists(a, b):
     """
     This method will merge two linked lists into one linked lists.
+
+    :param a: Linkedlist
+    :param b: Linkedlist
+    :return: Linkedlist
     """
     zip_linkedList = LinkedList()
     current_a = a.head

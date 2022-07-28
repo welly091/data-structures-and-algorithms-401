@@ -36,5 +36,5 @@ Go to **[test/code_challenges](../../tests/code_challenges)** folder and run ``p
 
 [test_linked_list_kth](../../tests/code_challenges/test_linked_list_kth.py) (Code Challenge 07)
 
-[test_linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py)
+[test_linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py) (Code Challenge 08)
 
