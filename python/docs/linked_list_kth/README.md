@@ -14,7 +14,10 @@ Create a list and add each value into the list while iterating the linked list.
 The time complexity is O(N), where N is the length of the Node
 The Space complexity is O(N), since a list is created.
 
-## API
+## Solution
+Run the test files for API functions below and check if test cases are all passed.
+
+### API
 
 [linked_list class](../../data_structures/linked_list.py)
 - includes(val): Check if a Node with target value is in the linkedlist.
@@ -40,5 +43,5 @@ Go to **[test/code_challenges](../../tests/code_challenges)** folder and run ``p
 
 [test_linked_list_kth](../../tests/code_challenges/test_linked_list_kth.py) (Code Challenge 07)
 
-[test_linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py)
+[test_linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py) (Code Challenge 08)
 

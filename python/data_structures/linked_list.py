@@ -141,22 +141,39 @@ class LinkedList:
         :type index: int
         :return: Node
         '''
-        #If the index is negative number, raise TargetError()
+        # #If the index is negative number, raise TargetError()
         if index < 0:
-            raise TargetError()
-
+             raise TargetError()
+        '''
         #Everytime we iterate the linkedlist, we store the value into a list
         current = self.head
         list_val = []
         while current:
-            list_val.append(current.value)
+            # list_val.append(current.value)
+            # current = current.next
+            list_val.insert(0, current.value)
             current = current.next
 
         #If the index is larger than the length of linkedlist, raise TargetError()
         if len(list_val)-1 < index:
             raise TargetError()
 
-        return list_val[len(list_val)-1-index]
+        # return list_val[len(list_val)-1-index]
+        return list_val[index]
+        '''
+        #Alternative method, without extra list
+        current = self.head
+        left = self.head
+        right = self.head
+        #Out of range
+        for i in range(index):
+            if right.next is None:
+                raise TargetError()
+            right = right.next
+        while right.next:
+                left = left.next
+                right = right.next
+        return left.value
 
     def __str__(self):
         current = self.head

@@ -14,7 +14,10 @@ Construct a Node class and a linked list class. A linked list can be initiated a
 The Big(O) for time complexity for inserting a Node to a linked list is O(n) where n is determined by the linked list length.
 The Big(O) for space complexity is O(1).
 
-## API
+## Solution
+Run the test files for API functions below and check if test cases are all passed.
+
+### API
 
 [linked_list class](../../data_structures/linked_list.py)
 - includes(val): Check if a Node with target value is in the linkedlist.
@@ -40,5 +43,5 @@ Go to **[test/code_challenges](../../tests/code_challenges)** folder and run ``p
 
 [test_linked_list_kth](../../tests/code_challenges/test_linked_list_kth.py) (Code Challenge 07)
 
-[test_linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py)
+[test_linked_list_zip](../../tests/code_challenges/test_linked_list_zip.py) (Code Challenge 08)
 
