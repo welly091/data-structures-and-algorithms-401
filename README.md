@@ -6,3 +6,5 @@
 - [Linked List](python/docs/linked_list/README.md)
 - [Linked List Insertions](python/docs/linked_list_insertions/README.md)
 - [Linked List kth](python/docs/linked_list_kth/README.md)
+- [Linked List zip](python/docs/linked_list_zip/README.md)
+- [Stack and Queue](python/docs/stack_and_queue/README.md)
