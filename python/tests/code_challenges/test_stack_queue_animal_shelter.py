@@ -2,7 +2,6 @@ import pytest
 from code_challenges.stack_queue_animal_shelter import AnimalShelter, Dog, Cat
 
 
-@pytest.mark.skip("TODO")
 def test_single_cat():
     shelter = AnimalShelter()
     cat = Cat()
@@ -12,7 +11,6 @@ def test_single_cat():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_single_dog():
     shelter = AnimalShelter()
     dog = Dog()
@@ -22,7 +20,6 @@ def test_single_dog():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_dog_preferred_but_cat_in_front():
     shelter = AnimalShelter()
     cat = Cat()
@@ -34,7 +31,6 @@ def test_dog_preferred_but_cat_in_front():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_dog_then_cat():
     shelter = AnimalShelter()
     cat = Cat()
@@ -47,7 +43,6 @@ def test_dog_then_cat():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_bad_pref():
     shelter = AnimalShelter()
     cat = Cat()
@@ -58,3 +53,51 @@ def test_bad_pref():
     actual = shelter.dequeue("lizard")
     expected = None
     assert expected == actual
+
+'''
+##########################
+My tests
+##########################
+'''
+
+def test_bad_pref_2():
+    shelter = AnimalShelter()
+    cat = Cat()
+    shelter.enqueue(cat)
+    actual = shelter.dequeue('dog')
+    expected = None
+    assert actual == expected
+
+def test_no_dog():
+    shelter = AnimalShelter()
+    cat = Cat()
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    expected_1 = shelter.dequeue('dog')
+    assert expected_1 == None
+    expected_1 = shelter.dequeue('cat')
+    assert expected_1 == cat
+
+def test_empty_shelter():
+    shelter = AnimalShelter()
+    expected = shelter.dequeue('dog')
+    assert expected == None
+
+#Stretch Goal Tests
+def test_no_pref():
+    shelter = AnimalShelter()
+    cat = Cat()
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    shelter.enqueue(cat)
+    dog = Dog()
+    shelter.enqueue(dog)
+    expected = shelter.dequeue('')
+    assert expected == dog
