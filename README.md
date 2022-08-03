@@ -10,3 +10,4 @@
 - [Stack and Queue](python/docs/stack_and_queue/README.md)
 - [Stack Queue Pseudo](python/docs/stack_queue_pseudo/README.md)
 - [Stack Queue Animal Shelter](python/docs/stack_queue_animal_shelter/README.md)
+- [Stack Queue Brackets](python/docs/stack_queue_brackets/README.md)
