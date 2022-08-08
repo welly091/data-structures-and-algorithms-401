@@ -1,3 +1,5 @@
+from data_structures.queue import Queue
+
 class BinaryTree:
     """
     Binary Tree class stores a 'root' Node for the tree and has three methods for traverse.
@@ -58,6 +60,28 @@ class BinaryTree:
 
         helper(self.root)
         return post_order_list
+
+    def add(self, value):
+        node = Node(value)
+        if self.root is None:
+            self.root = node
+            return
+
+        q = Queue()
+        q.enqueue(self.root)
+        while not q.is_empty():
+            temp = q.dequeue()
+            if temp.left is None:
+                temp.left = node
+                break
+            elif temp.right is None:
+                temp.right = node
+                break
+            else:
+                q.enqueue(temp.left)
+                q.enqueue(temp.right)
+
+
 
 class Node:
     """
