@@ -5,7 +5,7 @@
 Create a method that traverse a binary tree in a breadth-first traversal order.
 
 ## Whiteboard Process
-![tree-breadth-first](Tree-breadth-first.jpg)
+![tree-breadth-first](tree-breadth-first.jpg)
 
 ## Approach & Efficiency
 - Create a queue and a list.
