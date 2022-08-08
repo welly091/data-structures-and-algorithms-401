@@ -41,8 +41,12 @@ class Queue:
         #remove from front
         old_front = self.front
 
-        #reset fron to the 2nd in line
+        #reset from to the 2nd in line
         self.front = self.front.next
+
+        #reset rear if queue is empty
+        if self.front is None:
+            self.rear = None
 
         # return the value
         return old_front.value
