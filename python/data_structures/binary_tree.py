@@ -81,7 +81,34 @@ class BinaryTree:
                 q.enqueue(temp.left)
                 q.enqueue(temp.right)
 
+    def find_maximum_value(self):
+        """
+        Fine the maximum value with those Nodes in a tree.
+        :return : int
+        """
+        if self.root is None:
+            return ""
 
+        result = self.root.value
+        stack = []
+        stack.append(self.root)
+
+        while len(stack) > 0:
+            temp = stack.pop()
+            result = max(temp.value, result)
+
+            if temp.right:
+                stack.append(temp.right)
+
+            temp = temp.left
+            while temp:
+                if temp:
+                    result = max(temp.value, result)
+                if temp.right:
+                    stack.append(temp.right)
+                temp = temp.left
+
+        return result
 
 class Node:
     """
