@@ -32,7 +32,7 @@ class Queue:
 
     def dequeue(self):
         '''
-        Dequeue remove the oldest data from  aqueue
+        Dequeue remove the oldest data from a queue
 
         :return: None
         '''
