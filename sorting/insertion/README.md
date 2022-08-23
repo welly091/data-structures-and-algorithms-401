@@ -2,9 +2,8 @@
 
 ## Introduction
 Insertion sort is a sorting algorithm that will have a "selected value" and compares this value with those unsorted value
-on the left while ietrating a list. While iterating a list, we select the element at current index and compare this value
-with the value on the left. If the left value is larger than the current value, we switch those numbers and do the same process
-with left value until the those left values are smaller or equal to the current value.
+on the left while ietrating a list. While iterating a list, we select the element at current index position and compare this value
+with the value on the left. If the left value is larger than the current value, we switch those numbers and do the same process until the those left values are smaller or equal to the current value.
 
 ## Pseudocode
 ```
@@ -22,7 +21,7 @@ InsertionSort(int[] arr)
       arr[j + 1] <-- temp
 ```
 
-## Trace
+## Whiteboard Process
 Sample: [5, 3, 8, 4]
 
 Pass 1:
