@@ -82,7 +82,7 @@ def insertion_sort(unsorted_list):
         while j >= 0 and temp < unsorted_list[j]:
             unsorted_list[j+1] = unsorted_list[j]
             j-=1
-            unsorted_list[j+1] = temp
+        unsorted_list[j+1] = temp
     return unsorted_list
 ```
 
