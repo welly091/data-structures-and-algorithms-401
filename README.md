@@ -17,3 +17,4 @@
 - [Tree Fizz Buzz](python/docs/tree_fizz_buzz/README.md)
 - [Tree Intersection](python/docs/tree_intersection/README.md)
 - [Sorting- insertion](sorting/insertion/README.md)
+- [Sorting- merge](sorting/merge/README.md)
