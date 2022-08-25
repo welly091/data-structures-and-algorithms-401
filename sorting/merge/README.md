@@ -95,8 +95,8 @@ def merge_sort(unsorted_list):
     list_length = len(unsorted_list)
     if list_length > 1:
         mid = list_length // 2
-        left = unsorted_list[0:mid]
-        right = unsorted_list[mid:list_length]
+        left = unsorted_list[:mid]
+        right = unsorted_list[mid:]
 
         merge_sort(left)
         merge_sort(right)
@@ -125,4 +125,6 @@ def Merge(left, right, unsorted_list):
 - Time: O(NlogN): Because we keep dividing the list by two until each sub-list only contains one element,
 this takes log_2(N) times. Since we need to compare and merge each sub-list, we need to iterate each node, which is length of the list, N.
 Therefore, the total time complexity is O(N*logN).
-- Space: O(1): No additional place is needed for merge sort.
+- Space: O(N): the list is divided into smaller sub-lists and we need expand the spaces for those sub-lists.
+The worst case depends on the length of the list since each element will become a sub-list while doing merge sort.
+Therefore, it gives us O(N).
