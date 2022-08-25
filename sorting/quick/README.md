@@ -144,4 +144,4 @@ def swap(list, i, low):
 ## Efficency
 - Time: O(N^2): If we are lucky that the list is already sorted, we should get O(N*logN).
 However, if the list has descending order, the worst case, then we need to go through all the numbers get O(N^2).
-- Space: O(1): No additional place is needed for merge sort.
+- Space: O(logN): N depends on how many divisions you have done to those elements in the list.
