@@ -36,11 +36,9 @@ def Merge(left, right, unsorted_list):
             right_index += 1
         list_index+=1
 
-    while left_index < len(left):
-        unsorted_list[list_index] = left[left_index]
-        left_index+=1
-        list_index +=1
-    while right_index < len(right):
-        unsorted_list[list_index] = right[right_index]
-        right_index += 1
-        list_index += 1
+    if left_index < len(left):
+        unsorted_list[list_index:] = left[left_index:]
+
+    if right_index < len(right):
+        unsorted_list[list_index:] = right[right_index:]
+
