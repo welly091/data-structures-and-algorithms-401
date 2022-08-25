@@ -18,3 +18,4 @@
 - [Tree Intersection](python/docs/tree_intersection/README.md)
 - [Sorting- insertion](sorting/insertion/README.md)
 - [Sorting- merge](sorting/merge/README.md)
+- [Sorting- quick](sorting/quick/README.md)
