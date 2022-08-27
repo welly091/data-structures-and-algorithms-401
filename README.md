@@ -19,3 +19,4 @@
 - [Sorting- insertion](sorting/insertion/README.md)
 - [Sorting- merge](sorting/merge/README.md)
 - [Sorting- quick](sorting/quick/README.md)
+- [Hashtable](python/docs/hashtable/README.md)
