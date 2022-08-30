@@ -15,9 +15,11 @@
 - [Tree Breadth First](python/docs/tree_breadth_first/README.md)
 - [Tree Max](python/docs/tree_max/README.md)
 - [Tree Fizz Buzz](python/docs/tree_fizz_buzz/README.md)
-- [Tree Intersection](python/docs/tree_intersection/README.md)
 - [Sorting- insertion](sorting/insertion/README.md)
 - [Sorting- merge](sorting/merge/README.md)
 - [Sorting- quick](sorting/quick/README.md)
 - [Hashtable](python/docs/hashtable/README.md)
 - [Hashtable Repeated Word](python/docs/hashtable_repeated_word/README.md)
+- [Tree Intersection (Use stacks)](python/docs/tree_intersection/README.md)
+- [Tree Intersection (Use hashmap/hashtable)](python/docs/tree_intersection_hashmap/README.md)
+
