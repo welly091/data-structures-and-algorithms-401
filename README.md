@@ -20,3 +20,4 @@
 - [Sorting- merge](sorting/merge/README.md)
 - [Sorting- quick](sorting/quick/README.md)
 - [Hashtable](python/docs/hashtable/README.md)
+- [Hashtable Repeated Word](python/docs/hashtable_repeated_word/README.md)
