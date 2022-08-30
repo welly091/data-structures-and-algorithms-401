@@ -23,6 +23,18 @@ def test_tree_intersection():
 
     assert sorted(actual) == sorted(expected)
 
+def test_tree_intersection_2():
+    tree_a = BinaryTree()
+    values = [1,2,3]
+    add_values_to_empty_tree(tree_a, values)
+
+    tree_b = BinaryTree()
+    values = [1,3,2]
+    add_values_to_empty_tree(tree_b, values)
+
+    actual = tree_intersection(tree_a, tree_b)
+    expected = [1]
+    assert sorted(actual) == sorted(expected)
 
 def add_values_to_empty_tree(tree, values):
     """

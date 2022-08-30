@@ -5,7 +5,7 @@ Unlike dictionary, hashtable will encrypt the key which is called **hash code**,
 which will be used as an index in a list-like place called **bucket**.
 Each index in the bucket stores the **linked list** that contains bunch of key/value data.
 
-![HashTable](https://i.imgur.com/aQnMU9d.png)
+![HashTable](hashtable.png)
 
 ## Challenge
 All tests for this challenge should be passed.
