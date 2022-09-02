@@ -35,6 +35,9 @@ class Graph:
 
         :return: dict_key list
         """
+        #If the graph is empty, return None
+        if list(self.adjacency_list.keys()) == []:
+            return None
         return self.adjacency_list.keys()
 
     def add_edge(self, start_vertex, end_vertex, weight=0):

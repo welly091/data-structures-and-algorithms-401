@@ -130,8 +130,8 @@ def test_get_empty_graph():
 
     graph = Graph()
 
-    actual = list(graph.get_nodes())
+    actual = graph.get_nodes()
 
-    expected = []
+    expected = None
 
     assert actual == expected
