@@ -1,3 +1,5 @@
+from data_structures.queue import Queue
+
 class Graph:
     """
     Graph class allows you to add vertices or edges, to get all nodes, and to retrieve a specific vertice's neighbors.
@@ -38,7 +40,7 @@ class Graph:
         #If the graph is empty, return None
         if list(self.adjacency_list.keys()) == []:
             return None
-        return self.adjacency_list.keys()
+        return list(self.adjacency_list.keys())
 
     def add_edge(self, start_vertex, end_vertex, weight=0):
         """
@@ -64,6 +66,31 @@ class Graph:
         :return: list of the neighboers of a vertex
         """
         return self.adjacency_list[vertex]
+
+    def breadth_first(self, vertex):
+        """
+        Start with the given vertex to find all connected vertexes using breadth-first search algorithm.
+
+        :params vertex: vertex started from
+        :return: list, list of vertexes
+        """
+        nodes = []
+        breadth_queue = Queue()
+        visited = set()
+
+        breadth_queue.enqueue(vertex)
+        visited.add(vertex)
+
+        while not breadth_queue.is_empty():
+            front = breadth_queue.dequeue()
+            nodes.append(front.value)
+
+            for each_edge in self.get_neighbors(front):
+                if each_edge.vertex not in visited:
+                    visited.add(each_edge.vertex)
+                    breadth_queue.enqueue(each_edge.vertex)
+
+        return nodes
 
 class Vertex:
     def __init__(self, value):
