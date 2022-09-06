@@ -6,7 +6,6 @@ def test_exists():
     assert Graph
 
 
-@pytest.mark.skip("TODO")
 def test_bfs(graph):
     nodes = graph.get_nodes()
     root = nodes[0]
@@ -52,3 +51,78 @@ def graph():
     realms.add_edge(naboo, narnia)
 
     return realms
+
+
+################
+### My Tests ###
+################
+
+@pytest.fixture
+def my_graph():
+    g = Graph()
+    city_a = g.add_node("Seattle")
+    city_b = g.add_node("Boston")
+    city_c = g.add_node("Atlanta")
+    city_d = g.add_node("Los Angeles")
+
+    g.add_edge(city_a, city_a, 0)
+    g.add_edge(city_a, city_b, 9)
+    g.add_edge(city_a, city_c, 8)
+    g.add_edge(city_a, city_d, 5)
+
+    g.add_edge(city_b, city_a, 9)
+    g.add_edge(city_b, city_b, 0)
+    g.add_edge(city_b, city_c, 4)
+    g.add_edge(city_b, city_d, 10)
+
+    g.add_edge(city_c, city_a, 8)
+    g.add_edge(city_c, city_b, 4)
+    g.add_edge(city_c, city_c, 0)
+    g.add_edge(city_c, city_d, 7)
+
+    g.add_edge(city_d, city_a, 5)
+    g.add_edge(city_d, city_b, 10)
+    g.add_edge(city_d, city_c, 7)
+    g.add_edge(city_d, city_d, 0)
+
+    return g
+
+def test_mytest_1(my_graph):
+
+    nodes = my_graph.get_nodes()
+    root = nodes[0]
+    actual = my_graph.breadth_first(root)
+    expected = ["Seattle", "Boston", "Atlanta", "Los Angeles"]
+    assert actual == expected
+
+
+def test_mytest_2(my_graph):
+    nodes = my_graph.get_nodes()
+    root = nodes[1]
+    actual = my_graph.breadth_first(root)
+    expected = ["Boston", "Seattle", "Atlanta", "Los Angeles"]
+    assert actual == expected
+
+def test_mytest_3(my_graph):
+    my_graph.add_node("New York")
+    nodes = my_graph.get_nodes()
+    root = nodes[4]
+    actual = my_graph.breadth_first(root)
+    expected = ["New York"]
+    assert actual == expected
+
+def test_mytest_4(my_graph):
+    my_graph.add_node("New York")
+    nodes = my_graph.get_nodes()
+    root = nodes[3]
+    actual = my_graph.breadth_first(root)
+    expected = ["Los Angeles", "Seattle", "Boston", "Atlanta"]
+    assert actual == expected
+
+def test_mytest_5(my_graph):
+    my_graph.add_edge(my_graph.add_node("New York"), my_graph.add_node("New Jersey"), 1)
+    nodes = my_graph.get_nodes()
+    root = nodes[4]
+    actual = my_graph.breadth_first(root)
+    expected = ["New York", "New Jersey"]
+    assert actual == expected
