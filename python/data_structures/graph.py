@@ -63,9 +63,9 @@ class Graph:
         Get all neighbor vertexes associated with a given vertex
 
         :params vertex: searching this vertex's neighbors
-        :return: list of the neighboers of a vertex
+        :return: list of the neighbors of a vertex
         """
-        return self.adjacency_list[vertex]
+        return list(self.adjacency_list[vertex])
 
     def breadth_first(self, vertex):
         """

@@ -1,5 +1,5 @@
 # Code Challenge Class 36
-## Hashtable left join
+## Graph Breadth-first Search
 Implement a breadth-first traversal on a graph
 
 ## Challenge Summary
