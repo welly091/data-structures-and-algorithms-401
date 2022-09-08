@@ -26,4 +26,5 @@
 - [Graph](python/docs/graph/README.md)
 - [Graph Breadth First](python/docs/graph_breadth_first/README.md)
 - [Graph Business Trip](python/docs/graph_business_trip/README.md)
+- [Graph Depth First](python/docs/graph_depth_first/README.md)
 

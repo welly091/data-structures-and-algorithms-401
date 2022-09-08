@@ -15,7 +15,7 @@ All tests for this challenge should be passed.
 - Dequeue and get a vertex
 - If the vertex is not visited yet(not in the set), store this vertex value into the list
 - Store the vertex into the set and store its children vertexes into the queue
-- Repead previous three setps until there is no vertex to be stored into the queue
+- Repeat previous three steps until there is no vertex to be stored into the queue
 - Return the list of vertex values
 
 Big O:
