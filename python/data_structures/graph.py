@@ -1,4 +1,5 @@
 from data_structures.queue import Queue
+from data_structures.stack import Stack
 
 class Graph:
     """
@@ -91,6 +92,35 @@ class Graph:
                     breadth_queue.enqueue(each_edge.vertex)
 
         return nodes
+
+    def depth_first_search(self, vertex):
+        """
+        Start with the given vertex to find all connected vertexes using depth-first search algorithm in preorder traversal.
+
+        :params vertex: vertex started from
+        :return: list, list of vertexes
+        """
+        if self.get_nodes() is None:
+            return []
+
+        nodes = []
+        depth_stack = Stack()
+        visited = set()
+
+        depth_stack.push(vertex)
+        visited.add(vertex)
+
+        while not depth_stack.is_empty():
+            front = depth_stack.pop()
+            nodes.append(front.value)
+
+            for each_edge in self.get_neighbors(front)[::-1]:
+                if each_edge.vertex not in visited:
+                    visited.add(each_edge.vertex)
+                    depth_stack.push(each_edge.vertex)
+
+        return nodes
+
 
 class Vertex:
     def __init__(self, value):
